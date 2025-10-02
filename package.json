@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
 "scripts": {
-  "test": "mocha tests/**/*.spec.js"
+  "test": "mocha tests/**/*.spec.js",
+  "test:report": "mocha tests/**/*.spec.js --timeout 60000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=results"
 },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "chai": "^6.2.0",
     "chromedriver": "^140.0.4",
     "mocha": "^11.7.2",
-    "selenium-webdriver": "^4.35.0"
+    "selenium-webdriver": "^4.35.0",
+    "mochawesome": "^7.1.3"
   }
 }
